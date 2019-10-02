@@ -18,7 +18,12 @@ main(int argc, char *argv[])
   }
 
   // your code to print the time in any format you like...
-  return('%m/%d/%y%n %H:%M:%S');
+  day_name(r.year,r.month,r.day);	// day of the week
+  month_name(r.month);  	// month of the year
+  printf(1," %d",r.day); 	 // date
+  printf(1," %d:%d:%d",r.hour,r.minute,r.second);  // current time
+  printf(1," UTC");  // UTC format
+  printf(1," %d\n",r.year);  // prints current year
 
   exit();
 }
