@@ -1,4 +1,7 @@
 //****THIS IS ALL NEW********
+//EMMA PRAGER
+//CS 450
+//PA  2
 
 #include "types.h"
 #include "user.h"
@@ -15,7 +18,7 @@ main(int argc, char *argv[])
   }
 
   // your code to print the time in any format you like...
-  return('%m/%d/%y%n %H:%M:%S')
+  return('%m/%d/%y%n %H:%M:%S');
 
   exit();
 }
