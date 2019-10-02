@@ -7,27 +7,27 @@ I added a system call named as date, which returns today’s date. Although it i
 
 Reserve a system call number for my date system call
               
-              #define SYS_date 22
+      #define SYS_date 22
               
 ### syscall.c 
 
 Within the array: 
-        static int (*syscalls[ ])(void)
+      static int (*syscalls[ ])(void)
        
 I added       
-       [SYS_date] sys_date,
+      [SYS_date] sys_date,
         
 So that when a system call with number 22 occurrs, the function pointed by the function pointer sys_date will be called.
                 
-                extern int sys_date(void);
+      extern int sys_date(void);
                 
 ### usys.S
 
-          SYSCALL(date)
+      SYSCALL(date)
           
 ### user.h
   
-            int date(struct rtcdate *);
+      int date(struct rtcdate *);
             
 ### date.c
 
