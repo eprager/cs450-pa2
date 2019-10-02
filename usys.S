@@ -33,4 +33,3 @@ SYSCALL(uptime)
 // NEW CODE
 // *******
 SYSCALL(date)
-

@@ -90,6 +90,9 @@ sys_uptime(void)
   return xticks;
 }
 
+// ********
+// NEW CODE
+// *********
 int sys_date(void)
 {
   struct rtcdate *r;
