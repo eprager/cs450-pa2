@@ -103,10 +103,9 @@ extern int sys_unlink(void);
 extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
-
-// *******
+// ********
 // NEW CODE
-// **********
+// ********
 extern int sys_date(void);
 
 static int (*syscalls[])(void) = {
@@ -131,12 +130,10 @@ static int (*syscalls[])(void) = {
 [SYS_link]    sys_link,
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
-
-// ****
+// ********
 // NEW CODE
-// *****
-[SYS_date]   sys_date
-
+// ********
+[SYS_getyear]   sys_date,
 };
 
 void
