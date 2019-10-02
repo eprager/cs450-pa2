@@ -29,11 +29,12 @@ main(int argc, char *argv[])
 }
 
 int sys_date(void)
-    {
-      struct rtcdate *r;
-      if(argptr(0, (void*)&r, sizeof(r)) < 0)
-       return -1;
-      cmostime(r);
-      return 0;
-     }
+{
+  struct rtcdate *r;
+  if(argptr(0, (void*)&r, sizeof(r)) < 0)
+    return -1;
+  cmostime(r);
+  return 0;
+}
+
 
