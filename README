@@ -1,3 +1,43 @@
+# Date-in-xv6
+## Files Changed
+
+I added a system call named as date, which returns today’s date. Although it is fairly simple, many files need to be modified.
+
+### syscall.h
+
+Reserve a system call number for my date system call
+              
+              #define SYS_date 22
+              
+### syscall.c 
+
+Within the array: 
+        static int (*syscalls[ ])(void)
+       
+I added       
+       [SYS_date] sys_date,
+        
+So that when a system call with number 22 occurrs, the function pointed by the function pointer sys_date will be called.
+                
+                extern int sys_date(void);
+                
+### usys.S
+
+          SYSCALL(date)
+          
+### user.h
+  
+            int date(struct rtcdate *);
+            
+### date.c
+
+Finally, I added the new file to implement the date based on provided skeleton code.
+
+
+# -
+# xv6 INFORMATION
+
+
 xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
 Version 6 (v6).  xv6 loosely follows the structure and style of v6,
 but is implemented for a modern x86-based multiprocessor using ANSI C.
