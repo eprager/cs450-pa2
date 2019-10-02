@@ -1,4 +1,4 @@
-# Date-in-xv6
+# Date implemented in xv6
 ## Files Changed
 
 I added a system call named as date, which returns today’s date. Although it is fairly simple, many files need to be modified.
@@ -34,7 +34,7 @@ So that when a system call with number 22 occurrs, the function pointed by the f
 Finally, I added the new file to implement the date based on provided skeleton code.
 
 
-# -
+# 
 # xv6 INFORMATION
 
 
