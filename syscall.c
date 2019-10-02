@@ -133,7 +133,7 @@ static int (*syscalls[])(void) = {
 // ********
 // NEW CODE
 // ********
-[SYS_getyear]   sys_date,
+[SYS_date]   sys_date,
 };
 
 void
