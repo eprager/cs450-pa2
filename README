@@ -11,7 +11,7 @@
 
 ## Files Changed (you may also select compare under the clone/download button, then click files changed to view differences sorted by file name)
 
-I added a system call named as date, which returns today’s date. Although it is fairly simple, many files need to be modified.
+I implemented a system call named as date, which returns today’s date. Although it is fairly simple, many files need to be modified.
 
 ### Makefile
 
