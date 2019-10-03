@@ -1,5 +1,12 @@
 # Date implemented in xv6
-## Files Changed
+
+## Building & Executing
+      
+      clone or download this repository
+      'make qemu' in terminal from cs450-pa2 directory that is created
+      'date' command returns current date and time year-month-day hour:minute:second
+
+## Files Changed (you may also select compare under the clone/download button to view differences)
 
 I added a system call named as date, which returns today’s date. Although it is fairly simple, many files need to be modified.
 
