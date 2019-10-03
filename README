@@ -9,7 +9,7 @@
       let qemu window open, it is now waiting for user input
       'date' command returns current date and time year-month-day hour:minute:second
 
-## Files Changed (you may also select compare under the clone/download button to view differences)
+## Files Changed (you may also select compare under the clone/download button, then click files changed to view differences sorted by file name)
 
 I added a system call named as date, which returns today’s date. Although it is fairly simple, many files need to be modified.
 
