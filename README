@@ -1,9 +1,12 @@
 # Date implemented in xv6
 
 ## Building & Executing
+
+      Dependencies: qemu 
       
       clone or download this repository
-      'make qemu' in terminal from cs450-pa2 directory that is created
+      'make qemu' in terminal from cs450-pa2 directory that is created to run
+      let qemu window open, it is now waiting for user input
       'date' command returns current date and time year-month-day hour:minute:second
 
 ## Files Changed (you may also select compare under the clone/download button to view differences)
