@@ -17,11 +17,13 @@ I added a system call named as date, which returns today’s date. Although it i
 
 ### syscall.h
 
-Reserve a system call number for my date system call
+Reserve a system call number for my date system call.
               
       #define SYS_date 22
               
 ### syscall.c 
+
+Define the system call entry point by pointing to the implementation and map symbol name to function name.
 
 Within the array: 
               
@@ -37,9 +39,13 @@ So that when a system call with number 22 occurrs, the function pointed by the f
                 
 ### usys.S
 
+Add to the list of system calls made avalible to kernel.
+
       SYSCALL(date)
           
 ### user.h
+  
+Add the function prototype to compile user functions.  
   
       int date(struct rtcdate*);
       
